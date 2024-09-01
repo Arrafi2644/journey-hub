@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JourneyHub</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font awesome  -->
+    <script src="https://kit.fontawesome.com/4b649fead8.js" crossorigin="anonymous"></script>
+
+    <!-- Daisy UI + Tailwind CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        'lato-font': 'Lato'
+                    },
+                    backgroundImage: {
+                        'hero-bg': 'url(images/hero-bg.avif)'
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="font-lato-font">
+    <header>
+        <!-- Header section  -->
+        <div class="container mx-auto px-5 py-5 ">
+            <!-- navbar  -->
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+
+                    <a class="font-bold text-2xl md:text-3xl cursor-pointer text-gray-900">JourneyHub</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-medium ">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Places</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div>
+                        <a class="btn text-lg h-auto text-white bg-gray-900 hidden md:flex">Book Now</a>
+                        <div class="dropdown hidden md:bolck">
+                            <div tabindex="0" role="button" class="btn btn-ghost pr-0 lg:hidden">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0 ">
+                                <a class="btn text-xl h-auto text-white bg-gray-900">Book Now</a>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost pr-0 lg:hidden">
+                            <i class="fa-solid fa-bars text-2xl"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0 ">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Places</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner -->
+            <div class="hero min-h-screen bg-hero-bg rounded-md ">
+                <div class="hero-overlay bg-opacity-60 rounded-md"></div>
+                <div class="hero-content text-neutral-content text-center py-10">
+                    <div class="w-full md:w-4/5 lg:w-3/5">
+                        <h1 class="mb-5 text-5xl font-bold text-white">Your <br> Journey Begins Here</h1>
+                        <p class="mb-5 text-gray-400 font-medium">
+                            Embark on a journey to discover breathtaking destinations around the world. From hidden gems
+                            to iconic landmarks, find your perfect adventure with us. Let's explore together!
+                        </p>
+                        <button class="btn bg-gray-900 text-white text-lg">Get Started</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <!-- About Section  -->
+        <section class="py-10 px-5 container mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-2">About Us</h2>
+            <p class="text-gray-500 text-center w-4/5 lg:w-3/5 mx-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quidem harum corrupti perferendis itaque laudantium quae voluptate placeat sequi libero soluta.</p>
+
+            <!-- section-body  -->
+            <div class=" py-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <img class="w-full rounded-md" src="images/about.avif" alt="">
+                </div>
+                <div class="flex flex-col justify-center gap-6">
+                    <h2 class="text-2xl font-bold text-gray-900">Lorem ipsum dolor sit amet.</h2>
+                    <p class="font-medium text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda qui corrupti dolores dolorum porro sint quidem aspernatur pariatur nulla laborum.</p>
+                    <button class="btn rounded-md mx-auto md:ml-0 text-lg">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section  -->
+        <section class="py-10 px-5 container mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-2">Gallery</h2>
+            <p class="text-gray-500 text-center w-4/5 lg:w-3/5  mx-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quidem harum corrupti perferendis itaque laudantium quae voluptate placeat sequi libero soluta.</p>
+
+            <!-- section-body  -->
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+                <div class="w-full max-h-[250px] ">
+                    <img class="rounded-md w-full h-full object-cover" src="images/g-1.avif" alt="">
+                </div>
+                <div class="w-full max-h-[250px] col-span-1 md:col-span-2">
+                    <img class="rounded-md w-full h-full object-cover" src="images/g-2.avif" alt="">
+                </div>
+                <div class="w-full max-h-[250px] md:hidden lg:block">
+                    <img class="rounded-md w-full h-full object-cover" src="images/g-3.avif" alt="">
+                </div>
+                <div class="w-full max-h-[250px] col-span-1 md:col-span-2">
+                    <img class="rounded-md w-full h-full object-cover" src="images/g-4.webp" alt="">
+                </div>
+
+                <div class="w-full max-h-[250px] md:hidden lg:block  col-span-1 md:col-span-2">
+                    <img class="rounded-md w-full h-full object-cover" src="images/g-6.webp" alt="">
+                </div>
+                <div class="w-full max-h-[250px]">
+                    <img class="rounded-md w-full h-full object-cover" src="images/g-7.avif" alt="">
+                </div>
+                <div class="w-full max-h-[250px] md:order-1 lg:order-none col-span-1 md:col-span-2">
+                    <img class="rounded-md w-full h-full object-cover" src="images/g-8.avif" alt="">
+                </div>
+
+                <div class="w-full max-h-[250px] ">
+                    <img class="rounded-md w-full h-full object-cover" src="images/g-5.webp" alt="">
+                </div>
+
+        </section>
+
+        <!-- Packages Section  -->
+        <section class="py-10 px-5 container mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-2">Our Packages</h2>
+            <p class="text-gray-500 text-center w-4/5 lg:w-3/5  mx-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quidem harum corrupti perferendis itaque laudantium quae voluptate placeat sequi libero soluta.</p>
+
+            <!-- section-body  -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                <div class="card bg-base-100 w-full border rounded-md ">
+                    <div class="card-body">
+                        <h2 class="card-title">Basic</h2>
+                        <h3 class="text-2xl font-semibold ">$150</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi dolorem aut praesentium
+                            tenetur. Placeat, unde.</p>
+                        <div class="card-actions ">
+                            <button class="btn bg-gray-900 text-white">Let's Book</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-full border rounded-md ">
+                    <div class="card-body">
+                        <h2 class="card-title">Standard</h2>
+                        <h3 class="text-2xl font-semibold ">$300</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi dolorem aut praesentium
+                            tenetur. Placeat, unde.</p>
+                        <div class="card-actions ">
+                            <button class="btn bg-gray-900 text-white">Let's Book</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-full border rounded-md ">
+                    <div class="card-body">
+                        <h2 class="card-title">Premium</h2>
+                        <h3 class="text-2xl font-semibold ">$500</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi dolorem aut praesentium
+                            tenetur. Placeat, unde.</p>
+                        <div class="card-actions ">
+                            <button class="btn bg-gray-900 text-white">Let's Book</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- FAQ Section  -->
+        <section class="py-10 px-5 container mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-2">Clients Question</h2>
+            <p class="text-gray-500 text-center w-4/5 lg:w-3/5  mx-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quidem harum corrupti perferendis itaque laudantium quae voluptate placeat sequi libero soluta.</p>
+
+            <!-- section-body  -->
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- img -->
+                <div>
+                    <img class="w-full h-auto object-cover" src="images/faq.png" alt="">
+                </div>
+                <!-- content  -->
+                <div class="space-y-6">
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div class="collapse-title text-lg font-semibold">Lorem ipsum dolor sit amet?</div>
+                        <div class="collapse-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, in! Corporis fugit
+                                molestias dolorum itaque.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-lg font-semibold">Lorem ipsum dolor sit amet, consectetur Fuga
+                            delectus quidem quod?</div>
+                        <div class="collapse-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minima, nesciunt error
+                                sequi similique dicta.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-lg font-semibold">Lorem, ipsum dolor sit amet consectetur
+                            adipisicing Deserunt?</div>
+                        <div class="collapse-content">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident beatae facere
+                                similique optio iure, officia voluptate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Review Section  -->
+        <section class="py-10 px-5 container mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-2">Clients Review</h2>
+            <p class="text-gray-500 text-center w-4/5 lg:w-3/5  mx-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quidem harum corrupti perferendis itaque laudantium quae voluptate placeat sequi libero soluta.</p>
+
+            <!-- section-body  -->
+            <div class="mt-6">
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <div class="w-4/5 mx-auto text-center flex flex-col items-center justify-center gap-4">
+                            <img class="max-h-28" src="images/user-1.png" alt="">
+                            <h3 class="text-xl font-semibold ">Jhon Doe</h3>
+                            <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores magni tenetur
+                                voluptate, sed distinctio ducimus officiis deserunt explicabo. Natus, facere. Fuga
+                                aliquam ut aperiam ratione. "</p>
+                        </div>
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide3" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <div class="w-4/5 mx-auto text-center flex flex-col items-center justify-center gap-4">
+                            <img class="max-h-28" src="images/user-2.png" alt="">
+                            <h3 class="text-xl font-semibold ">Atika Khanam</h3>
+                            <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores magni tenetur
+                                voluptate, sed distinctio ducimus officiis deserunt explicabo. Natus, facere. Fuga
+                                aliquam ut aperiam ratione. "</p>
+                        </div>
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <div class="w-4/5 mx-auto text-center flex flex-col items-center justify-center gap-4">
+                            <img class="max-h-28" src="images/user-3.png" alt="">
+                            <h3 class="text-xl font-semibold ">Q Wilde</h3>
+                            <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores magni tenetur
+                                voluptate, sed distinctio ducimus officiis deserunt explicabo. Natus, facere. Fuga
+                                aliquam ut aperiam ratione. "</p>
+                        </div>
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section  -->
+        <section class="py-10 px-5 container mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-2">Contact</h2>
+            <p class="text-gray-500 text-center w-4/5 lg:w-3/5  mx-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quidem harum corrupti perferendis itaque laudantium quae voluptate placeat sequi libero soluta.</p>
+
+            <!-- section-body  -->
+            <div class="w-full mt-6 grid grid-cols-1 md:grid-cols-2 gap-6 ">
+                <div class="w-full">
+                    <input type="text" placeholder="Type your first name" class="input input-bordered w-full" />
+                </div>
+                <div>
+                    <input type="text" placeholder="Type your last name" class="input input-bordered w-full " />
+                </div>
+
+                <div>
+                    <input type="email" placeholder="Type your email" class="input input-bordered w-full " />
+                </div>
+                <div>
+                    <input type="number" placeholder="Type your phone number" class="input input-bordered w-full " />
+                </div>
+                <div class="col-span-1 md:col-span-2">
+                    <textarea class="textarea textarea-bordered w-full resize-none " placeholder="Write a message"
+                        rows="5"></textarea>
+                </div>
+                <div>
+                    <button class="btn text-white bg-gray-900 rounded-md text-lg">Submit Now</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800">
+        <!-- Footer section  -->
+        <footer class="container mx-auto px-5 py-10  footer text-gray-200 grid grid-cols-1 md:grid-cols-4 gap-10">
+           <div class="md:col-span-2 md:w-3/4">
+            <a href="#" class="text-2xl md:text-3xl text-gray-400 font-bold ">JourneyHub</a>
+            <h3 class="text-lg font-semibold ">Lorem ipsum dolor sit amet consectetur.</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus sit hic iure iste consectetur! Repellendus quisquam iste illum minima.</p>
+           </div>
+
+            <nav>
+              <h6 class="footer-title">Company</h6>
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Contact</a>
+              <a class="link link-hover">Blog</a>
+              <a class="link link-hover">Privacy and Policy</a>
+            </nav>
+            <nav>
+              <div>
+                <h6 class="footer-title">Social</h6>
+              <div class="grid grid-flow-col gap-4">
+                <a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                  </svg>
+                </a>
+                <a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                  </svg>
+                </a>
+                <a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="mt-5">
+                <h6 class="footer-title">Phone Us</h6>
+                <a class="font-semibold" href="#" type="tel">01751166818</a>
+                <br>
+                <a class="font-semibold" href="#" type="tel">01918557168</a>
+              </div>
+              </div>
+            </nav>
+          </footer>
+    </footer>
+</body>
+
+</html>
